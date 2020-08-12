@@ -123,13 +123,13 @@ function insertParagraph(txt){
 function insertButton(){
   // 1. Create the button
 var button = document.createElement("button");
-button.innerHTML = " Contact the Lawyer ";
+button.innerHTML = " Contact our Lawyer ";
 
 var body = document.getElementById("article");
 body.appendChild(button);
 
 button.addEventListener ("click", function() {
-  alert("This feature is not yet avaiable.");
+  alert("Sorry, but this feature is not yet avaiable.");
 });
 }
 
