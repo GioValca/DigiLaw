@@ -8,14 +8,17 @@ function loadResult(){
   var element = document.getElementById("article");
   element.appendChild(br);
   element.appendChild(para);
-
-  if (($("#c1").is(':checked') || $("#c2").is(':checked') || $("#c3").is(':checked') || $("#c4").is(':checked') ||
-      $("#c5").is(':checked') || $("#c6").is(':checked') || $("#c7").is(':checked') || $("#c8").is(':checked') ) &&
-      (verifyRadioButton("q1") || verifyRadioButton("q2") || verifyRadioButton("q3") || verifyRadioButton("q4")  )  ){
-        compliance();
-  } else{
-        noCompliance();
+  if($("#c1").is(':checked') || $("#c2").is(':checked') || $("#c3").is(':checked') || $("#c4").is(':checked') ||
+    $("#c5").is(':checked') || $("#c6").is(':checked') || $("#c7").is(':checked') || $("#c8").is(':checked')){
+    if (verifyRadioButton("q1") || verifyRadioButton("q2") || verifyRadioButton("q3") || verifyRadioButton("q4")) {
+      compliance();
+    } else {
+      noCompliance();
+    }
+  } else {
+    compliance();
   }
+
 }
 
 function verifyRadioButton(q) {
