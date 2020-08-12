@@ -126,7 +126,7 @@ function insertParagraph(txt){
 
 function insertButton(){
   // 1. Create the button
-  var myButton = document.createElement("<button style='background-color:yellow;' class='btn btn-default'> MyButton</button>");
+  var myButton = document.createElement('<button type="submit" class="our-button-color btn" id="btnContactUs"  onClick="location.href="test.html"";> Check your compliance! </button>');
   //button.innerHTML = " Contact our Lawyer ";
 
   var body = document.getElementById("article");

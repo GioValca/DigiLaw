@@ -332,8 +332,8 @@ h5 {
 }
 
 .min-vh-home {
-	height: calc(40vh);
-	min-width: 15vw;
+	height: calc(25vh);
+	min-width: 7vw;
 }
 
 .min-vh-homeInfo {
