@@ -42,7 +42,7 @@ function noCompliance(){
   var element = document.getElementById("article");
   element.appendChild(br);
   element.appendChild(para);
-  
+
   var myText = document.getElementById("title").innerHTML;
   var marked = myText.replace("Article 9", "You are not compliant with Article 9!")
   document.getElementById("title").innerHTML = marked;
@@ -126,15 +126,15 @@ function insertParagraph(txt){
 
 function insertButton(){
   // 1. Create the button
-var button = document.createElement("button");
-button.innerHTML = " Contact our Lawyer ";
+  var myButton = document.createElement("<button style='background-color:yellow;' class='btn btn-default'> MyButton</button>");
+  //button.innerHTML = " Contact our Lawyer ";
 
-var body = document.getElementById("article");
-body.appendChild(button);
+  var body = document.getElementById("article");
+  body.appendChild(myButton);
 
-button.addEventListener ("click", function() {
-  alert("Sorry, but this feature is not yet avaiable.");
-});
+  myButton.addEventListener ("click", function() {
+    alert("Sorry, but this feature is not yet avaiable.");
+  });
 }
 
 function insertButton1(){

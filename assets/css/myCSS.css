@@ -332,6 +332,11 @@ h5 {
 }
 
 .min-vh-home {
+	height: calc(40vh);
+	min-width: 15vw;
+}
+
+.min-vh-homeInfo {
 	height: calc(100vh - 81px);
 	min-width: 100vw;
 }
@@ -625,7 +630,7 @@ h5 {
 }
 
 .our-button-color {
-	background-color: #0078CD !important;
+	background-color: #1C193F !important;
 	color: #fff !important;
 }
 
