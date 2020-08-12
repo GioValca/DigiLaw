@@ -134,8 +134,6 @@ button.addEventListener ("click", function() {
 }
 
 function insertButton1(){
-
 var body = document.getElementById("article");
 body.append($('<button>Test</button>').click(function () { alert('This feature is not yet avaiable.'); }));
-
 }
