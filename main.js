@@ -1,13 +1,5 @@
 function loadResult(){
   $("#whole").hide();
-  var para = document.createElement("p");
-  var br = document.createElement("br");
-  var node = document.createTextNode("The previous paragraph is the article in which the parts highlighted in red are the ones that are not compliant with the GDPR regualation.");
-  para.appendChild(node);
-
-  var element = document.getElementById("article");
-  element.appendChild(br);
-  element.appendChild(para);
   if($("#c1").is(':checked') || $("#c2").is(':checked') || $("#c3").is(':checked') || $("#c4").is(':checked') ||
     $("#c5").is(':checked') || $("#c6").is(':checked') || $("#c7").is(':checked') || $("#c8").is(':checked')){
     if (verifyRadioButton("q1") || verifyRadioButton("q2") || verifyRadioButton("q3") || verifyRadioButton("q4")) {
@@ -42,6 +34,15 @@ function verifyRadioButton(q) {
 
 
 function noCompliance(){
+  var para = document.createElement("p");
+  var br = document.createElement("br");
+  var node = document.createTextNode("The previous paragraph is the article in which the parts highlighted in red are the ones that are not compliant with the GDPR regualation.");
+  para.appendChild(node);
+
+  var element = document.getElementById("article");
+  element.appendChild(br);
+  element.appendChild(para);
+  
   var myText = document.getElementById("title").innerHTML;
   var marked = myText.replace("Article 9", "You are not compliant with Article 9!")
   document.getElementById("title").innerHTML = marked;
