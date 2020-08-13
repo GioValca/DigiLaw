@@ -1,7 +1,6 @@
 function loadResult(){
   $("#whole").hide();
   if ($("#defaultUnchecked").is(':checked')) {
-    console.log("AAAAAAAAAAA");
   }
   if($("#c1").is(':checked') || $("#c2").is(':checked') || $("#c3").is(':checked') || $("#c4").is(':checked') ||
     $("#c5").is(':checked') || $("#c6").is(':checked') || $("#c7").is(':checked') || $("#c8").is(':checked')){
@@ -17,7 +16,6 @@ function loadResult(){
 }
 
 function verifyRadioButton(q) {
-  console.log("checking q");
   const rbs = document.querySelectorAll('input[name="'+ q + '"]');
             let selectedValue;
             for (const rb of rbs) {
@@ -91,7 +89,6 @@ function noCompliance(){
 }
 
 function compliance(){
-  console.log("compliance");
   var myText = document.getElementById("title").innerHTML;
   var marked = myText.replace("Article 9", "You are compliant with Article 9!")
   document.getElementById("title").innerHTML = marked;
@@ -125,8 +122,11 @@ function insertParagraph(txt){
 
 function insertButton(){
   // 1. Create the button
-  var myButton = document.createElement('<button type="submit" class="our-button-color btn" id="btnContactUs"  onClick="location.href="test.html"";> Check your compliance! </button>');
-  //button.innerHTML = " Contact our Lawyer ";
+  console.log("creation of button");
+  var myButton = document.createElement('BUTTON');
+  myButton.innerHTML = " Contact our Lawyer ";
+  myButton.class = "our-button-color btn";
+  myButton.type = "submit";
 
   var body = document.getElementById("article");
   body.appendChild(myButton);
