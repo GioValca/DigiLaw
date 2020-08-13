@@ -121,16 +121,14 @@ function insertParagraph(txt){
 }
 
 function insertButton(){
-  // 1. Create the button
   console.log("creation of button");
   var myButton = document.createElement('BUTTON');
-  myButton.innerHTML = " Contact our Lawyer ";
-  myButton.class = "our-button-color btn";
-  myButton.type = "submit";
-
+  myButton.setAttribute("class", "our-button-color btn");
+  myButton.setAttribute("type","submit");
+  myButton.setAttribute("content", " Contact our Lawyer ");
+  myButton.textContent = " Contact our Lawyer ";
   var body = document.getElementById("article");
   body.appendChild(myButton);
-
   myButton.addEventListener ("click", function() {
     alert("Sorry, but this feature is not yet avaiable.");
   });
