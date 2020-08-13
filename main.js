@@ -1,5 +1,8 @@
 function loadResult(){
   $("#whole").hide();
+  if ($("#defaultUnchecked").is(':checked')) {
+    console.log("AAAAAAAAAAA");
+  }
   if($("#c1").is(':checked') || $("#c2").is(':checked') || $("#c3").is(':checked') || $("#c4").is(':checked') ||
     $("#c5").is(':checked') || $("#c6").is(':checked') || $("#c7").is(':checked') || $("#c8").is(':checked')){
     if (verifyRadioButton("q1") || verifyRadioButton("q2") || verifyRadioButton("q3") || verifyRadioButton("q4")) {
