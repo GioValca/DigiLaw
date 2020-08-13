@@ -95,7 +95,6 @@ function compliance(){
   var myText = document.getElementById("title").innerHTML;
   var marked = myText.replace("Article 9", "You are compliant with Article 9!")
   document.getElementById("title").innerHTML = marked;
-
 }
 
 function suggestion(){
@@ -107,10 +106,7 @@ function suggestion(){
   var element = document.getElementById("article");
   element.appendChild(br);
   element.appendChild(para);
-
-
 }
-
 
 function marker(text) {
   var myText = document.getElementById("article").innerHTML;
@@ -138,9 +134,4 @@ function insertButton(){
   myButton.addEventListener ("click", function() {
     alert("Sorry, but this feature is not yet avaiable.");
   });
-}
-
-function insertButton1(){
-var body = document.getElementById("article");
-body.append($('<button>Test</button>').click(function () { alert('This feature is not yet avaiable.'); }));
 }
